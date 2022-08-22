@@ -1,0 +1,209 @@
+// Menu Sidebar Starts Here
+.sidebar {
+	width: 260px;
+	height: 100vh;
+	position: sticky;
+	left: 0;
+	top: 0;
+	border-right: 1px solid hsl(var(--border));
+	background-color: #f3f6f9;
+	@extend %transition;
+	overflow-y: auto;
+	@include breakpoint(max-lg) {
+		transform: translateX(-100%);
+		z-index: 111;
+		padding-bottom: 50px;
+		&.active {
+			transform: translateX(0);
+		}
+	}
+
+	.menu-icon,
+	.menu-icon-text {
+		display: none;
+	}
+
+	&.menu-icon-show {
+		width: auto;
+		.menu-icon {
+			display: block;
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+	&.menu-icon-text-show {
+		.menu-icon-text {
+			display: block;
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.search-form {
+	position: relative;
+	.search-icon {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		cursor: pointer;
+	}
+}
+.menu-sidebar {
+	padding: 15px 20px 10px;
+}
+.menu {
+	li {
+		width: 100%;
+		a {
+			padding: 10px 10px;
+			display: block;
+			font-size: 17px;
+			border-radius: 4px;
+			i {
+				font-size: 18px;
+				line-height: 1;
+				padding-right: 5px;
+			}
+			&.active,
+			&:hover {
+				color: hsl(var(--body));
+				background-color: #cce2f8;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.body-content {
+	width: calc(100% - 240px);
+	margin-left: auto;
+	padding: 50px 60px;
+	@extend %transition;
+	@include breakpoint(max-xxl) {
+		padding-inline: 40px;
+	}
+	@include breakpoint(max-lg) {
+		width: 100%;
+		padding: 5px 25px 40px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 0 30px 30px;
+	}
+}
+
+// Login & Register Starts
+.resgister, .login {
+	background-color: #fafcff;
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.pb-30 {
+	padding-bottom: 30px;
+}
+.login-wrapper {
+	background-color: hsl(var(--white));
+	border: 1px solid hsl(var(--border));
+	background: hsl(var(--white));
+	border-radius: 2px;
+	padding: 30px 77px 80px;
+	overflow: hidden;
+	width: 470px;
+	@include breakpoint (max-lg) {
+		padding: 25px 15px 35px;
+	}
+	.cmn--btn {
+		display: block;
+		width: 100%;
+	}
+}
+.login-form {
+	label {
+		margin-bottom: 3px;
+	}
+}
+.pass-remembar {
+	a {
+		text-decoration: underline;
+		font-style: italic;
+		font-size: 14px;
+	}
+	.check-box {
+		font-size: 14px;
+		cursor: pointer;
+		input {
+			margin-top: 15px;
+		}
+		label {
+			cursor: pointer;
+		}
+	}
+}
+.idpress {
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 50%;
+		height: 1px;
+		top: 77%;
+		background-color: #a3b3d2;
+		@include breakpoint (max-sm) {
+			width: 20%;
+		}
+	}
+	&::before {
+		left: -21%;
+		@include breakpoint (max-sm) {
+			left: 0px;
+		}
+	}
+	&::after {
+		right: -21%;
+		@include breakpoint (max-sm) {
+			right: 10px;
+		}
+	}
+}
+
+.resgister-form {
+	background-color: hsl(var(--white));
+	padding-bottom: 0 !important;
+	.form-group {
+		margin-bottom: 18px;
+	}
+	label {
+		margin-bottom: 2px !important;
+	}
+}
+.border-top {
+	border-top: 1px solid #a3b3d2;
+	width: 140%;
+	transform: translateX(-14.5%);
+}
+.form-bottom-text {
+	a {
+		color: #8f8f8f;
+		text-decoration: underline;
+		padding-left: 15px;
+	}
+}
+.check-box-2 {
+	input {
+		width: 15px;
+	}
+	label {
+		width: calc(100% - 15px);
+		padding-left: 20px;
+		font-size: 10px;
+		line-height: 1.3;
+		cursor: pointer;
+		font-size: 14px;
+	}
+}
