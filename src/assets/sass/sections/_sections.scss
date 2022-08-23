@@ -1,48 +1,41 @@
 // Menu Sidebar Starts Here
 .sidebar {
 	width: 260px;
-	height: 100vh;
 	position: sticky;
 	left: 0;
 	top: 0;
 	border-right: 1px solid hsl(var(--border));
 	background-color: #f3f6f9;
 	@extend %transition;
-	overflow-y: auto;
 	@include breakpoint(max-lg) {
 		transform: translateX(-100%);
 		z-index: 111;
 		padding-bottom: 50px;
-		&.active {
-			transform: translateX(0);
-		}
-	}
 
-	.menu-icon,
-	.menu-icon-text {
-		display: none;
 	}
-
-	&.menu-icon-show {
-		width: auto;
-		.menu-icon {
-			display: block;
-			img {
-				margin: 0 auto;
-			}
-		}
-	}
-	&.menu-icon-text-show {
-		.menu-icon-text {
-			display: block;
-			img {
-				margin: 0 auto;
-			}
-		}
+	.logo {
+		padding: 12px 15px;
+		border-bottom: 1px solid hsl(var(--border));
 	}
 }
+.text--secondary {
+	color: #878787;
+}
+
 .search-form {
 	position: relative;
+	margin: 0px 15px;
+	.form--control {
+		border: 0px;
+		border-bottom: 1px solid hsl(var(--border));
+		background-color: transparent;
+		padding-left: 3px;
+		border-radius: 0;
+		padding-right: 35px;
+		&:focus {
+			border-color: hsl(var(--base));
+		}
+	}
 	.search-icon {
 		position: absolute;
 		top: 50%;
@@ -51,14 +44,18 @@
 		cursor: pointer;
 	}
 }
-.menu-sidebar {
-	padding: 15px 20px 10px;
-}
 .menu {
+	padding: 0px 20px 10px;
+	height: 100vh;
+	overflow-y: auto;
 	li {
 		width: 100%;
+		span {
+			font-size: 17px;
+			padding: 8px 10px;
+		}
 		a {
-			padding: 10px 10px;
+			padding: 8px 10px;
 			display: block;
 			font-size: 17px;
 			border-radius: 4px;
@@ -90,6 +87,21 @@
 	}
 	@include breakpoint(max-sm) {
 		padding: 0 30px 30px;
+	}
+}
+
+.newservice-form {
+	.form-group {
+		label {
+			width: 185px;
+			margin: 0;
+		}
+		input, select {
+			height: 35px;
+		}
+		.form--control {
+			width: calc(100% - 185px);
+		}
 	}
 }
 

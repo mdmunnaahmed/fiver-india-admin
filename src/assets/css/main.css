@@ -1635,13 +1635,11 @@ input:-webkit-autofill:focus {
 
 .sidebar {
     width: 260px;
-    height: 100vh;
     position: sticky;
     left: 0;
     top: 0;
     border-right: 1px solid hsl(var(--border));
     background-color: #f3f6f9;
-    overflow-y: auto;
 }
 
 @media (max-width: 991px) {
@@ -1650,39 +1648,33 @@ input:-webkit-autofill:focus {
         z-index: 111;
         padding-bottom: 50px;
     }
-
-    .sidebar.active {
-        transform: translateX(0);
-    }
 }
 
-.sidebar .menu-icon,
-.sidebar .menu-icon-text {
-    display: none;
+.sidebar .logo {
+    padding: 12px 15px;
+    border-bottom: 1px solid hsl(var(--border));
 }
 
-.sidebar.menu-icon-show {
-    width: auto;
-}
-
-.sidebar.menu-icon-show .menu-icon {
-    display: block;
-}
-
-.sidebar.menu-icon-show .menu-icon img {
-    margin: 0 auto;
-}
-
-.sidebar.menu-icon-text-show .menu-icon-text {
-    display: block;
-}
-
-.sidebar.menu-icon-text-show .menu-icon-text img {
-    margin: 0 auto;
+.text--secondary {
+    color: #878787;
 }
 
 .search-form {
     position: relative;
+    margin: 0px 15px;
+}
+
+.search-form .form--control {
+    border: 0px;
+    border-bottom: 1px solid hsl(var(--border));
+    background-color: transparent;
+    padding-left: 3px;
+    border-radius: 0;
+    padding-right: 35px;
+}
+
+.search-form .form--control:focus {
+    border-color: hsl(var(--base));
 }
 
 .search-form .search-icon {
@@ -1693,16 +1685,23 @@ input:-webkit-autofill:focus {
     cursor: pointer;
 }
 
-.menu-sidebar {
-    padding: 15px 20px 10px;
+.menu {
+    padding: 0px 20px 10px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .menu li {
     width: 100%;
 }
 
+.menu li span {
+    font-size: 17px;
+    padding: 8px 10px;
+}
+
 .menu li a {
-    padding: 10px 10px;
+    padding: 8px 10px;
     display: block;
     font-size: 17px;
     border-radius: 4px;
@@ -1743,6 +1742,19 @@ input:-webkit-autofill:focus {
     .body-content {
         padding: 0 30px 30px;
     }
+}
+
+.newservice-form .form-group label {
+    width: 185px;
+    margin: 0;
+}
+
+.newservice-form .form-group input, .newservice-form .form-group select {
+    height: 35px;
+}
+
+.newservice-form .form-group .form--control {
+    width: calc(100% - 185px);
 }
 
 .resgister, .login {
