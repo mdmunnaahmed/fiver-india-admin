@@ -66,3 +66,27 @@
 .custom--card.card--md .card-body {
 	padding: 20px 20px;
 }
+
+// Admin Cmn Card
+.admin-card {
+	padding: 30px 40px;
+	background: #fff;
+	border: 1px solid hsl(var(--border));
+	.card-title {
+		margin-top: 25px;
+		margin-bottom: 30px;
+		color: hsl(var(--base));
+		border-bottom: 1px solid hsl(var(--border));
+		padding-bottom: 7px;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 150px;
+			height: 2px;
+			background-color: hsl(var(--base));
+			bottom: 0;
+			left: 0;
+		}
+	}
+}

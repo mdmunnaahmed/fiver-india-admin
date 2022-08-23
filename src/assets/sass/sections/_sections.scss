@@ -1,7 +1,7 @@
 // Menu Sidebar Starts Here
 .sidebar {
-	width: 260px;
-	position: sticky;
+	width: 250px;
+	position: fixed;
 	left: 0;
 	top: 0;
 	border-right: 1px solid hsl(var(--border));
@@ -11,7 +11,6 @@
 		transform: translateX(-100%);
 		z-index: 111;
 		padding-bottom: 50px;
-
 	}
 	.logo {
 		padding: 12px 15px;
@@ -50,14 +49,13 @@
 	overflow-y: auto;
 	li {
 		width: 100%;
+		font-size: 15px;
 		span {
-			font-size: 17px;
 			padding: 8px 10px;
 		}
 		a {
 			padding: 8px 10px;
 			display: block;
-			font-size: 17px;
 			border-radius: 4px;
 			i {
 				font-size: 18px;
@@ -73,21 +71,17 @@
 		}
 	}
 }
-.body-content {
-	width: calc(100% - 240px);
+.admin-content {
+	width: calc(100% - 250px);
 	margin-left: auto;
-	padding: 50px 60px;
 	@extend %transition;
-	@include breakpoint(max-xxl) {
-		padding-inline: 40px;
-	}
+	background-color: #fafcff;
 	@include breakpoint(max-lg) {
 		width: 100%;
-		padding: 5px 25px 40px;
 	}
-	@include breakpoint(max-sm) {
-		padding: 0 30px 30px;
-	}
+}
+.admin-content-inner {
+	padding: 20px;
 }
 
 .newservice-form {
@@ -96,7 +90,8 @@
 			width: 185px;
 			margin: 0;
 		}
-		input, select {
+		input,
+		select {
 			height: 35px;
 		}
 		.form--control {
@@ -106,7 +101,8 @@
 }
 
 // Login & Register Starts
-.resgister, .login {
+.resgister,
+.login {
 	background-color: #fafcff;
 }
 .pt-30 {
@@ -123,7 +119,7 @@
 	padding: 30px 77px 80px;
 	overflow: hidden;
 	width: 470px;
-	@include breakpoint (max-lg) {
+	@include breakpoint(max-lg) {
 		padding: 25px 15px 35px;
 	}
 	.cmn--btn {
@@ -161,24 +157,24 @@
 	&::before,
 	&::after {
 		position: absolute;
-		content: '';
+		content: "";
 		width: 50%;
 		height: 1px;
 		top: 77%;
 		background-color: #a3b3d2;
-		@include breakpoint (max-sm) {
+		@include breakpoint(max-sm) {
 			width: 20%;
 		}
 	}
 	&::before {
 		left: -21%;
-		@include breakpoint (max-sm) {
+		@include breakpoint(max-sm) {
 			left: 0px;
 		}
 	}
 	&::after {
 		right: -21%;
-		@include breakpoint (max-sm) {
+		@include breakpoint(max-sm) {
 			right: 10px;
 		}
 	}
