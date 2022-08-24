@@ -1,0 +1,421 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Site Titlte Here</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+
+
+
+<!-- Admin Dashboard Starts Here  -->
+<div class="admin-dashboard">
+    <div class="sidebar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="thumb">
+        </a>
+    </div>
+    <form class="search-form">
+        <div class="form-group">
+            <input type="text" placeholder="Search" class="form-control form--control">
+        </div>
+        <span class="search-icon text-icon-color "><i class="fas fa-search"></i></span>
+    </form>
+    <div class="menu-sidebar">
+        <ul class="menu">
+            <li><a href="dashboard.html"><i class="las la-home"></i> Dashboard</a></li>
+            <li><a href="dashboard.html">Your Seller Account</a></li>
+            <li><a href="dashboard.html">Your Services</a></li>
+            <li><span class="text--secondary">Your Buyer Account</span></li>
+            <li><span class="text--secondary">Cards Templetes</span></li>
+            <li><a href="dashboard.html"><i class="las la-digital-tachograph"></i> PVC Templets</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Weadding Invaitaion</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Horoscope (ஜாதகம்)</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Resume Builder</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Website Watchman</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Accounts Related</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Recharge History</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Transations</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Rechage</a></li>
+            <li><a href="dashboard.html"><i class="las la-home"></i> Become Distributor</a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="admin-content">
+        <div class="header-top">
+            <div class="row align-items-center justify-content-between w-100">
+                <div class="col-md-3">
+                    <div class="toggle-menu">
+                        <a href="javascript:void(0)" class="toggle-bar">
+                            <span></span>
+                            <span class="ml-fif"></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="d-flex account-verification-details justify-content-center">
+                        <li>Account Status: Active <span class="bts-icon"></span> </li>
+                        <li style="color:#30c00f;">Balance: 628 Rs. <span class="bts-icon"></span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
+                        <div class="tawk-tp-div">
+                            <a href="javascript:void(Tawk_API.toggle())"><img src="https://idpress.in/public/images/live-chat-tp.png" class=""></a>
+                        </div>
+                        <ul class="d-flex align-items-center profile-wrapper">
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
+                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
+                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin-content-inner">
+            <div class="pvc-templets">
+                <ul class="order-filter d-flex flex-wrap align-items-center">
+                    <li><a href="#0">Order ID</a></li>
+                    <li><a href="#0">Buyer Mobile</a></li>
+                    <li><a href="#0">Buyer Email</a></li>
+                    <li>
+                        <select class="form--control">
+                            <option value="">Order Status</option>
+                            <option value="">Order pending</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="form--control">
+                            <option value="">Date</option>
+                            <option value="">Today</option>
+                            <option value="">yesterday</option>
+                        </select>
+                    </li>
+                    <li><a href="#0">SEARCH</a></li>
+                </ul>
+                <div>
+                    <ul class="nav nav-filter">
+                        <li class="nav-item"><a href="#test1" data-bs-toggle="tab" class="nav-link active"><i class="lar la-check-circle"></i>Ongoing & New
+                                Orders</a></li>
+                        <li class="nav-item"><a href="#text2" data-bs-toggle="tab" class="nav-link text-secondary"><i class="lar la-check-circle"></i>Completed Orders</a>
+                        </li>
+                        <li class="nav-item"><a href="#text3" data-bs-toggle="tab" class="nav-link text-secondary"><i class="las la-times-circle"></i>Cancelled Orders</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="test1">
+                        <table class="table table--responsive--xl category-table w-100">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Order ID</th>
+                                    <th>Order Date</th>
+                                    <th>Due On</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/1.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>K7 Antivirus 1 year 1 PC License emailed to your email ID</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">6567964654654</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--warning">Waiting to start...</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/2.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>GST Returns Filing for 1 year including outward & inward..</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--success">In Process..</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/3.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>Google Maps Listing for your Business + Online Ma....</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--success">In Process..</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/3.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>Google Maps Listing for your Business + Online Ma....</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--danger">Delaying...</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="test2">
+                        <table class="table table--responsive--xl category-table w-100">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Order ID</th>
+                                    <th>Order Date</th>
+                                    <th>Due On</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/1.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>K7 Antivirus 1 year 1 PC License emailed to your email ID</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">6567964654654</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--warning">Waiting to start...</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/2.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>GST Returns Filing for 1 year including outward & inward..</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--success">In Process..</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/3.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>Google Maps Listing for your Business + Online Ma....</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--success">In Process..</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/3.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>Google Maps Listing for your Business + Online Ma....</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--danger">Delaying...</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="test3">
+                        <table class="table table--responsive--xl category-table w-100">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Order ID</th>
+                                    <th>Order Date</th>
+                                    <th>Due On</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/1.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>K7 Antivirus 1 year 1 PC License emailed to your email ID</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">6567964654654</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--warning">Waiting to start...</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/2.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>GST Returns Filing for 1 year including outward & inward..</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--success">In Process..</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/3.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>Google Maps Listing for your Business + Online Ma....</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--success">In Process..</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="content--wrapper d-flex flex-wrap">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon/3.png" alt="thumb">
+                                            </div>
+                                            <div class="content">
+                                                <p>Google Maps Listing for your Business + Online Ma....</p>
+                                                <p class="text-secondary">Payment Transaction ID: 9292939400430</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-label="Order ID">5458895645645</td>
+                                    <td data-label="Order Date">29 Jul 2022</td>
+                                    <td data-label="Due On">31 Jul 2022</td>
+                                    <td data-label="Total">₹350</td>
+                                    <td data-label="Status"><a href="#0" class="badge badge--danger">Delaying...</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Admin Dashboard Ends Here  -->
+
+
+
+
+
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Pluglin Link -->
+<script src="assets/js/lib/slick.min.js"></script>
+<script src="assets/js/lib/magnific-popup.min.js"></script>
+<script src="assets/js/lib/wow.min.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

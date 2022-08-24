@@ -41,7 +41,7 @@
         <div class="form-group">
             <input type="text" placeholder="Search" class="form-control form--control">
         </div>
-        <span class="search-icon"><i class="fas fa-search"></i></span>
+        <span class="search-icon text-icon-color "><i class="fas fa-search"></i></span>
     </form>
     <div class="menu-sidebar">
         <ul class="menu">
@@ -68,7 +68,7 @@
         <div class="header-top">
             <div class="row align-items-center justify-content-between w-100">
                 <div class="col-md-3">
-                    <div class="toggle-menu" align="">
+                    <div class="toggle-menu">
                         <a href="javascript:void(0)" class="toggle-bar">
                             <span></span>
                             <span class="ml-fif"></span>
@@ -99,7 +99,7 @@
             <div class="create-service admin-card">
                 <h5 class="card-title">Create a Service</h5>
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-6 col-xxl-4">
                         <form action="" class="newservice-form">
                             <div class="form-group d-flex flex-wrap align-items-center">
                                 <label for="">Service Name</label>
@@ -107,26 +107,105 @@
                             </div>
                             <div class="form-group d-flex flex-wrap align-items-center">
                                 <label for="">Upload Banner Image</label>
-                                <input type="text" class="form-control form--control">
+                                <input type="file" class="form--control fileup">
                             </div>
                             <div class="form-group d-flex flex-wrap align-items-center">
                                 <label for="">Category</label>
-                                <select class="form-select form--control">
-                                    <option value="">Upload Banner File..</option>
+                                <select class="form-select form--control px-2">
+                                    <option value="">Esevai Application Service</option>
+                                    <option value="">Esevai Application </option>
+                                    <option value="">Application Service</option>
                                 </select>
                             </div>
                             <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Service Name</label>
-                                <input type="text" class="form-control form--control">
+                                <label for="">Description</label>
+                                <textarea class="form--control"></textarea>
                             </div>
+                            
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Change Seller Name?:</label>
+                                <div class="d-flex flex-wrap check-input">
+                                    <div class="left">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="right"><input type="text" placeholder="Enter Seller Name" class="form-control form--control"></div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Change Sort Order?:</label>
+                                <div class="d-flex flex-wrap check-input">
+                                    <div class="left">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="right"><input type="text" value="4" class="form-control form--control"></div>
+                                </div>
+                            </div>
+                            
                         </form>
-                        Description
-
-
-                        Change Seller Name?:
-                        Change Sort Order?:
 
                     </div>
+                    <div class="col-lg-6 col-xxl-4">
+                        <form action="" class="newservice-form">
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Price</label>
+                                <div class="d-flex">
+                                    <input type="number" class="form-control form--control w-100 border-right-0" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="input-group-prepend h-35 ">
+                                        <br>
+                                        <span class="input-group-text  border-left-0" id="basic-addon1">+5 Rs.</span>
+                                    </div>
+                                </div>
+                                <div class="d-block">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Maximum Quantity Allowed?</label>
+                                <input type="text" class="form-control form--control">
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex flex-wrap maximum-wrapper">
+                                    <div class="form--control">
+                                        <label for="">Maximum Quantity Allowed?</label>
+                                        <span>For example:
+                                            To start working on this service, you need some basic information such as files, mobile number etc.</span>
+                                    </div>
+                                    <div class="w-">
+                                        <textarea class="form--control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Change Seller Name?:</label>
+                                <div class="d-flex flex-wrap check-input">
+                                    <div class="left">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="right"><input type="text" placeholder="Enter Seller Name" class="form-control form--control"></div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Change Sort Order?:</label>
+                                <div class="d-flex flex-wrap check-input">
+                                    <div class="left">
+                                        <input type="checkbox" checked>
+                                    </div>
+                                    <div class="right"><input type="text" value="4" class="form-control form--control"></div>
+                                </div>
+                            </div>
+                            
+                        </form>
+
+                    </div>
+                    <div class="col-lg-6 col-xxl-2">
+                        <div>
+                            <a href="#0">Why this extra charge?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-btn-wrapper d-flex justify-content-center">
+                    <a href="#0" class="cmn--btn">Create Service</a>
                 </div>
             </div>
         </div>

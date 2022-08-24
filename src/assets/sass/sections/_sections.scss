@@ -60,7 +60,7 @@
 			i {
 				font-size: 18px;
 				line-height: 1;
-				padding-right: 5px;
+				padding-right: 3px;
 			}
 			&.active,
 			&:hover {
@@ -71,6 +71,7 @@
 		}
 	}
 }
+
 .admin-content {
 	width: calc(100% - 250px);
 	margin-left: auto;
@@ -86,6 +87,9 @@
 
 .newservice-form {
 	.form-group {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
 		label {
 			width: 185px;
 			margin: 0;
@@ -94,8 +98,215 @@
 		select {
 			height: 35px;
 		}
-		.form--control {
+		.form--control, .check-input {
 			width: calc(100% - 185px);
+		}
+		.fileup {
+			cursor: pointer;
+			&:focus {
+				border-color: hsl(var(--border));
+			}
+		}
+		textarea {
+			padding-left: 10px;
+		}
+	}
+}
+.h-35 {
+	height: 35px;
+}
+.border-left-0 {
+	border-bottom: 0 ;
+	border-radius: 0px 0px 0px 0px;
+}
+.check-input {
+	.left {
+		width: 20px;
+		input {
+			width: 18px;
+			cursor: pointer;
+		}
+	}
+	.right  {
+		width: calc(100% - 20px);
+		padding-left: 15px;
+		input {
+			width: 100% !important;
+		}
+	}
+}
+.admin-btn-wrapper {
+	.cmn--btn {
+		padding: 15px 170px;
+		background-color: #fa4e0a;
+		border-color: #fa4e0a;
+		font-size: 23px;
+		line-height: 1;
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+}
+
+.text-icon-color {
+	color: #9c999d;
+}
+
+// PVC Template Starts Here 
+.pvc-templets {
+	border: 1px solid hsl(var(--border));
+	border-radius: 2px;
+	padding: 25px;
+	background-color: hsl(var(--white));
+	@include breakpoint (max-sm) {
+		padding: 15px;
+	}
+}
+.order-filter {
+	gap: 10px 22px;
+	border-bottom: 1px solid hsl(var(--border));
+	padding-bottom: 15px;
+	@include breakpoint  (max-xxl) {
+		gap: 10px 15px;
+	}
+	@include breakpoint  (max-xxl) {
+		gap: 10px;
+	}
+	li {
+		a {
+			padding: 7px 35px;
+			border: 1px solid hsl(var(--border));
+			border-radius: 4px;
+			@include breakpoint (max-sm) {
+				padding: 3px 10px;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.form--control {
+		padding: 7px 28px;
+	}
+}
+.nav-filter {
+	border-bottom: 1px solid hsl(var(--border));
+	gap: 20px 30px;
+	@include breakpoint(max-lg) {
+		gap: 3px 3px;
+	}
+	@include breakpoint(max-sm) {
+		justify-content: center;
+	}
+	a {
+		@extend %transition;
+		border-bottom: 2px solid transparent;
+		font-size: 16px;
+		color: hsl(var(--body));
+		i {
+			padding-right: 5px;
+			font-size: 18px;
+			line-height: 1;
+		}
+		@include breakpoint(max-lg) {
+			font-size: 15px;
+		}
+		&.active {
+			border-bottom: 2px solid hsl(var(--base));
+			padding-left: 0;
+			padding-right: 0;
+			color: hsl(var(--base));
+			i {
+				color: hsl(var(--base));
+			}
+		}
+	}
+}
+.table {
+	&.category-table {
+		 th {
+		border-top: 0px solid #dee2e6;
+		border-bottom: 1px solid hsl(var(--border));
+		}
+		td {
+			padding: 15px;
+		}
+	}
+}
+.content--wrapper {
+	.thumb {
+		width:30px;
+		img {
+			width: 100%;
+		}
+	}
+	.content {
+		width: calc(100% - 30px);
+		padding-left: 15px;
+		p {
+			line-height: 1;
+			margin-bottom: 8px;
+		}
+	}
+}
+// Transactions Starts Here 
+.content-search-form {
+	.form-group {
+		position: relative;
+		input {
+			padding-left: 30px;
+			border-color: #c6d1e1;
+		}
+		.search-icon {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			padding-left: 10px;
+			cursor: pointer;
+		}
+	}
+}
+.transctions-table-wrapper{
+	.content-left {
+		width: 250px;
+	}
+	.right-content {
+		ul {
+			gap: 0px 12px;
+		}
+		.cmn--btn {
+			padding: 5px 30px;
+			background-color: transparent;
+			color: hsl(var(--base));
+			border-color: #c6d1e1;
+			
+		}
+		.form--control {
+			border-color: #c6d1e1;
+			padding: 5px 10px;
+		}
+	}
+}
+.table-btn {
+	padding: 2px 30px;
+	@include breakpoint (max-xxl) {
+		padding: 5px 20px;
+	}
+}
+.transctions-table {
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid hsl(var(--border));
+	border-radius: 2px;
+	thead {
+		th {
+			border-bottom: 1px solid hsl(var(--border)) !important;
+		}
+	}
+	tbody {
+		td {
+			padding: 18px 15px !important;
 		}
 	}
 }

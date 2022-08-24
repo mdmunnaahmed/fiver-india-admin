@@ -1,0 +1,162 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
+
+
+<!-- Admin Dashboard Starts Here  -->
+<div class="admin-dashboard">
+    @@include('../partial-html/_sidebar.html')
+
+    <div class="admin-content">
+        <div class="header-top">
+            <div class="row align-items-center justify-content-between w-100">
+                <div class="col-md-3">
+                    <div class="toggle-menu">
+                        <a href="javascript:void(0)" class="toggle-bar">
+                            <span></span>
+                            <span class="ml-fif"></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="d-flex account-verification-details justify-content-center">
+                        <li>Account Status: Active <span class="bts-icon"></span> </li>
+                        <li style="color:#30c00f;">Balance: 628 Rs. <span class="bts-icon"></span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
+                        <div class="tawk-tp-div">
+                            <a href="javascript:void(Tawk_API.toggle())"><img src="https://idpress.in/public/images/live-chat-tp.png" class=""></a>
+                        </div>
+                        <ul class="d-flex align-items-center profile-wrapper">
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
+                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
+                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin-content-inner">
+            <div class="transctions-table-wrapper">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="content-left">
+                        <form class="content-search-form">
+                            <div class="form-group">
+                                <span class="search-icon text-icon-color"><i class="fas fa-search"></i></span>
+                                <input type="text" placeholder="Search" class="form-control form--control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-content">
+                        <ul class="d-flex flex-wrap">
+                            <li><button class="cmn--btn">Filter</button></li>
+                            <li>
+                                <select class="form--control">
+                                    <option value="">Short by</option>
+                                    <option value="">Date</option>
+                                    <option value="">Price</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h5 class="title font-weight-bold text-center mb-3">Direct from IDP to Esevai Owners</h5>
+                <table class="table table--responsive--lg transctions-table">
+                    <thead>
+                        <tr>
+                            <th>S No</th>
+                            <th>Product/Service</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Username</th>
+                            <th>Payment Transaction ID</th>
+                            <th>IDP Transaction ID</th>
+                            <th>Purchase Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="S No">1</td>
+                            <td data-label="Product/Service">K7 Antivirus 1 Yea....</td>
+                            <td data-label="Category">Antivirus</td>
+                            <td data-label="Price">400 Rs.</td>
+                            <td data-label="Username">Thangamani</td>
+                            <td data-label="Payment Transaction ID">924571231344666</td>
+                            <td data-label="IDP Transaction ID">IDP2920010</td>
+                            <td data-label="Purchase Date">2 July 2022 09:32 AM</td>
+                            <td data-label=""><button class="table-btn cmn--btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td data-label="S No">2</td>
+                            <td data-label="Product/Service">Google Maps Busines....</td>
+                            <td data-label="Category">Google Maps</td>
+                            <td data-label="Price">1800 Rs.</td>
+                            <td data-label="Username">Vadivel</td>
+                            <td data-label="Payment Transaction ID">678297831344666</td>
+                            <td data-label="IDP Transaction ID">DP2920056</td>
+                            <td data-label="Purchase Date">1 July 2022 06:22 AM</td>
+                            <td data-label=""><button class="table-btn cmn--btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td data-label="S No">3</td>
+                            <td data-label="Product/Service">Passport photo photoshop.</td>
+                            <td data-label="Category">Templates</td>
+                            <td data-label="Price">100 Rs.</td>
+                            <td data-label="Username">Sudhakar</td>
+                            <td data-label="Payment Transaction ID">895745631344666</td>
+                            <td data-label="IDP Transaction ID">IDP2920058</td>
+                            <td data-label="Purchase Date">1 July 2022 06:22 AM</td>
+                            <td data-label=""><button class="table-btn cmn--btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td data-label="S No">4</td>
+                            <td data-label="Product/Service">K7 Antivirus 1 Yea....</td>
+                            <td data-label="Category">Antivirus</td>
+                            <td data-label="Price">400 Rs.</td>
+                            <td data-label="Username">Dilip Pious</td>
+                            <td data-label="Payment Transaction ID">924571231344666</td>
+                            <td data-label="IDP Transaction ID">IDP2920010</td>
+                            <td data-label="Purchase Date">2 July 2022 06:22 AM</td>
+                            <td data-label=""><button class="table-btn cmn--btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td data-label="S No">5</td>
+                            <td data-label="Product/Service">K7 Antivirus 1 Yea....</td>
+                            <td data-label="Category">Antivirus</td>
+                            <td data-label="Price">1800 Rs.</td>
+                            <td data-label="Username">Dilip Pious</td>
+                            <td data-label="Payment Transaction ID">924571231344666</td>
+                            <td data-label="IDP Transaction ID">IDP2920010</td>
+                            <td data-label="Purchase Date">2 July 2022 06:22 AM</td>
+                            <td data-label=""><button class="table-btn cmn--btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td data-label="S No">6</td>
+                            <td data-label="Product/Service">Passport photo photoshop.</td>
+                            <td data-label="Category">Templates</td>
+                            <td data-label="Price">100 Rs.</td>
+                            <td data-label="Username">Sudhakar</td>
+                            <td data-label="Payment Transaction ID">895745631344666</td>
+                            <td data-label="IDP Transaction ID">IDP2920058</td>
+                            <td data-label="Purchase Date">1 July 2022 06:22 AM</td>
+                            <td data-label=""><button class="table-btn cmn--btn">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Admin Dashboard Ends Here  -->
+
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

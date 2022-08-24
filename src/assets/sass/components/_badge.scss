@@ -14,19 +14,19 @@
 	color: hsl(var(--secondary));
 }
 .badge--success {
-	background-color: hsl(var(--success) / 0.15);
-	border: 1px solid hsl(var(--success));
-	color: hsl(var(--success));
+	background-color: #01c52f;
+	border: 1px solid #01c52f;
+	color: hsl(var(--white));
 }
 .badge--danger {
-	background-color: hsl(var(--danger) / 0.15);
-	border: 1px solid hsl(var(--danger));
-	color: hsl(var(--danger));
+	background-color: #f90113;
+	border: 1px solid #f90113;
+	color: hsl(var(--white));
 }
 .badge--warning {
-	background-color: hsl(var(--warning) / 0.15);
+	background-color: #ff5a00;
 	border: 1px solid hsl(var(--warning));
-	color: hsl(var(--warning));
+	color: hsl(var(--white));
 }
 .badge--info {
 	background-color: hsl(var(--info) / 0.15);
@@ -40,11 +40,19 @@
 }
 
 .badge {
-	border-radius: 18px;
-	padding: 4px 15px;
+	border-radius: 3px;
+	padding: 8px 20px;
+	font-weight: normal;
+	font-size: 16px;
+	@include breakpoint (max-xxl) {
+		padding: 8px 15px;
+		font-size: 15px;
+	}
+	&:hover {
+		color: hsl(var(--white));
+	}
 	&.badge--icon {
 		padding: 5px;
-		border-radius: 5px;
 	}
 	&.badge--lg {
 		padding: 6px 16px;
