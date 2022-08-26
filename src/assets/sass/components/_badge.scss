@@ -1,7 +1,7 @@
 .badge--base {
-	background-color: hsl(var(--base) / 0.15);
+	background-color: hsl(var(--base));
 	border: 1px solid hsl(var(--base));
-	color: hsl(var(--base));
+	color: hsl(var(--white));
 }
 .badge--primary {
 	background-color: hsl(var(--primary) / 0.15);
@@ -27,6 +27,12 @@
 	background-color: #ff5a00;
 	border: 1px solid hsl(var(--warning));
 	color: hsl(var(--white));
+	&:hover {
+		background-color: #ff5a00;
+		border: 1px solid hsl(var(--warning));
+		color: hsl(var(--white));
+	}
+
 }
 .badge--info {
 	background-color: hsl(var(--info) / 0.15);
@@ -34,9 +40,10 @@
 	color: hsl(var(--info));
 }
 .badge--dark {
-	background-color: hsl(var(--dark) / 0.15);
-	border: 1px solid hsl(var(--dark));
-	color: hsl(var(--dark));
+	background-color: #003261;
+	border: 1px solid #003261;
+	color: hsl(var(--white));
+	padding-inline: 17px !important;
 }
 
 .badge {

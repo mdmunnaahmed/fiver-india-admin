@@ -79,11 +79,11 @@
                 <div class="col-md-4">
                     <ul class="d-flex account-verification-details">
                         <li class="d-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
-                            <img src="assets/images/icon/tick-icon.png" alt="icon">
-                        </span> </li>
+                                <img src="assets/images/icon/tick-icon.png" alt="icon">
+                            </span> </li>
                         <li class="d-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
-                            <img src="assets/images/icon/tick-icon.png" alt="icon">
-                        </span></li>
+                                <img src="assets/images/icon/tick-icon.png" alt="icon">
+                            </span></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -98,7 +98,8 @@
                             </div>
                         </div>
                         <ul class="d-flex align-items-center profile-wrapper">
-                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i class="fa fa-bell" aria-hidden="true"></i> </a></li>
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
+                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
                             <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
                         </ul>
                     </div>
@@ -107,82 +108,63 @@
         </div>
         <div class="admin-content-inner">
             <div class="create-service admin-card">
-                <h5 class="card-title">Create a Service</h5>
+                <h5 class="card-title">Create Service</h5>
+                <p class="create-subtile">Service Name & Details</p>
                 <div class="row">
                     <div class="col-xl-5">
                         <form action="" class="newservice-form">
-                            <div class="form-group d-flex flex-wrap align-items-center">
+                            <div class="form-group">
                                 <label for="">Service Name</label>
-                                <input type="text" class="form-control form--control">
+                                <input type="text" class="form-control form--control w-100">
                             </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <div><label for="">Upload Banner Image</label></div>
-                                <div class="form--control fileupload d-flex align-items-center">
-                                    <input type="file" id="fileupload" class="d-none">
-                                    <span class="pr-1"><i class="las la-file-upload"></i></span>
-                                    <label for="fileupload">Upload Banner File..</label>
-                                </div>
-                            </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Category</label>
-                                <select class="form-select form--control px-2">
-                                    <option value="">Esevai Application Service</option>
-                                    <option value="">Esevai Application </option>
-                                    <option value="">Application Service</option>
-                                </select>
-                            </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
+                            <div class="form-group">
                                 <label for="">Description</label>
-                                <textarea class="form--control"></textarea>
+                                <textarea class="form--control w-100"></textarea>
                             </div>
-                            
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Change Seller Name?:</label>
-                                <div class="d-flex flex-wrap check-input">
-                                    <div class="left">
-                                        <input type="checkbox" checked>
-                                    </div>
-                                    <div class="right"><input type="text" placeholder="Enter Seller Name" class="form-control form--control"></div>
-                                </div>
-                            </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Change Sort Order?:</label>
-                                <div class="d-flex flex-wrap check-input">
-                                    <div class="left">
-                                        <input type="checkbox" checked>
-                                    </div>
-                                    <div class="right"><input type="text" value="4" class="form-control form--control"></div>
-                                </div>
-                            </div>
-                            
                         </form>
-
                     </div>
                     <div class="col-xl-5">
+                        <h6 class="title mb-2">Upload Banner Image</h6>
+                        <div class="upload-file-box pt-120 pb-120 text-center">
+                            <p class="file-icon pb-30"><i class="las la-file-upload"></i></p>
+                            <div>
+                                <input type="file" class="d-none" id="fileUp">
+                                <label for="fileUp" class="cmn--btn">Upload Banner</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="create-subtile">Price and Delivery</p>
+                <div class="row">
+                    <div class="col-xl-5">
                         <form action="" class="newservice-form">
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Price</label>
+                            <div class="form-group">
+                                <div class="d-flex justify-content-beteen">
+                                    <div class="w-50">Price</div>
+                                    <div class="w-50 text-right"><a href="#0" class="font-14 text-end">Why this extra charge?</a></div>
+                                </div>
                                 <div>
                                     <div class="d-flex ">
-                                        <input type="number" class="form-control form--control w-100 border-right-0" aria-label="Username" aria-describedby="basic-addon1">
+                                        <input type="number" value="70" class="form-control form--control w-100 border-right-0" aria-label="Username"
+                                            aria-describedby="basic-addon1">
                                         <div class="input-group-prepend h-35 ">
                                             <span class="input-group-text  border-left-0" id="basic-addon1">+5 Rs.</span>
                                         </div>
                                     </div>
-                                    
+                    
                                     <div class="d-flex align-items-center">
                                         <input id="check" type="checkbox">
                                         <label for="check" class="m-2">Free</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
+                            <div class="form-group">
                                 <label for="">Delivery Time</label>
-                                <div class="form--control border-0">
-                                    <div class="d-flex">
+                                <div class="form--control w-100 border-0">
+                                    <div class="d-flex w-100">
                                         <input type="text" class="form-control form--control w-100 border-right-0" aria-label="Username" aria-describedby="basic-addon1">
                                         <div class="input-group-prepend h-35 ">
-                                            <select class="delivery-time">
+                                            <select class="delivery-time w-100">
                                                 <option value="">Hours</option>
                                                 <option value="">1 Hours</option>
                                                 <option value="">2 Hours</option>
@@ -191,40 +173,92 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Quantity?</label>
-                                <div class="d-flex flex-wrap check-input">
-                                    <div class="left">
-                                        <input type="checkbox" checked>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Maximum Quantity Allowed?</label>
-                                <input type="text" class="form-control form--control">
-                            </div>
                             <div class="form-group">
-                                <div class="d-flex flex-wrap maximum-wrapper">
-                                    <div class="content-left pb-2 pb-sm-0">
-                                        <label for="" class="pb-1 pb-sm-3">Question to Customer?</label>
-                                        <span>For example:</span>
-                                        <span>To start working on this service, you need some basic information such as files, mobile number etc.</span>
-                                    </div>
-                                    <textarea class="form--control textarea-right ps-2"></textarea>
-                                </div> 
+                                <label for="">Category of this Service</label>
+                                <select class="form--control w-100">
+                                    <option value=""></option>
+                                    <option value="">Category of this Service</option>
+                                </select>
                             </div>
-                            
                         </form>
-
+                    
                     </div>
-                    <div class="col-xl-2">
-                        <div class="d-flex flex-wrap align-items-center">
-                            <h4 class="text-success font-weight-bold pr-1">75 Rs.</h4>
-                            <a href="#0" class="text-underliine">Why this extra charge?</a>
+                    <div class="col-xl-6">
+                        <div class="d-flex flex-wrap align-items-center pb-40">
+                            <input id="check2" type="checkbox">
+                            <label for="check2" class="m-2">Quantity? (If you want to accept same service with multiple quantities)</label>
+                            <input type="text" class="form-control form--control">
+                        </div>
+                        <div class="">
+                            <label>Maximum Quantity Allowed? (How many maximum quantities customer can select in one order)</label>
+                            <input type="text" class="form-control form--control">
                         </div>
                     </div>
                 </div>
-                <div class="admin-btn-wrapper d-flex justify-content-center pt-40">
+                <div class="pt-50">
+                    <p class="create-subtile">Automatic Message After Order:</p>
+                    <p>You can setup an automatic messsage to customers after they order your service.</p>
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="example-wrapper pb-100">
+                                <span class="mb-1 text-secondary">Example:</span>
+                                <p class="text-secondary">To apply for voter ID address change please upload your aadhaar address change please attach smart card aadhaar card, passport photo, signature also
+                                enter your mobile number here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-50">
+                    <div class="create-subtile d-flex"><h5 class="title">Admin Only Options</h5><span class="ml-5 text-secondary">(This section is available only for Admin)</span></div>
+                    
+                    <form action="" class="d-flex flex-wrap pt-30">
+                        <div class="form-group">
+                            <input type="radio" id="admin" name="admin">
+                            <label for="admin">IDP Admin</label>
+                        </div>
+                        <div class="form-group ml-3">
+                            <input type="radio" id="admin2" name="admin">
+                            <label for="admin2">Set Seller Name</label>
+                        </div>
+                        <div class="form-group ml-3">
+                            <input type="radio" id="admin3" name="admin">
+                            <label for="admin3">Assign to Seller (enter mobile no of seller)</label>
+                        </div>
+                        
+                    </form>
+                    <div class="row justify-content-between">
+                        <div class="col-xl-5">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form--control w-100" placeholder="Enter Seller Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="fz-15">Sort Order in Home page: (Only for IDP Admin services)</label>
+                                    <input type="text" class="form-control form--control w-100" value="3">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="admin-right-content">
+                                <div class="pb-3">
+                                    <p class="mb-1">IDP Admin -</p>
+                                    <p class="mb-0">This service comes under Direct from IDP in hoem page</p>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="mb-1">Set Seller Name -</p>
+                                    <p class="mb-1">We can set a dummy name for seller without creating a seller account,</p>
+                                    <p>this order comes in second tabl of home page</p>
+                                </div>
+                                <div class="pb-3">
+                                    <p class="mb-1">Create Service for Seller-</p>
+                                    <p class="mb-1">We can create a service onbehalf of E-Sevai owner- We can enter their mobile number</p>
+                                    <p class="mb-0">and this service is assigned to their account</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-btn-wrapper d-flex justify-content-center pt-120">
                     <a href="#0" class="cmn--btn">Create Service</a>
                 </div>
             </div>

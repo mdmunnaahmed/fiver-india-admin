@@ -20,15 +20,25 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <ul class="d-flex account-verification-details justify-content-center">
-                        <li>Account Status: Active <span class="bts-icon"></span> </li>
-                        <li style="color:#30c00f;">Balance: 628 Rs. <span class="bts-icon"></span></li>
+                    <ul class="d-flex account-verification-details">
+                        <li class="d-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
+                            <img src="assets/images/icon/tick-icon.png" alt="icon">
+                        </span> </li>
+                        <li class="d-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
+                            <img src="assets/images/icon/tick-icon.png" alt="icon">
+                        </span></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
-                        <div class="tawk-tp-div">
-                            <a href="javascript:void(Tawk_API.toggle())"><img src="https://idpress.in/public/images/live-chat-tp.png" class=""></a>
+                        <div class="user-wrapper d-flex flex-wrap align-items-center">
+                            <div class="content">
+                                <p class="mb-1">உதவி வேண்டுமா?</p>
+                                <p class="mb-0 fs-12">என்னிடம் சேட் செய்யுங்கள்</p>
+                            </div>
+                            <div class="thumb">
+                                <img src="assets/images/thumb/main-user.png" alt="thumb">
+                            </div>
                         </div>
                         <ul class="d-flex align-items-center profile-wrapper">
                             <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i class="fa fa-bell" aria-hidden="true"></i> </a></li>
@@ -42,15 +52,19 @@
             <div class="create-service admin-card">
                 <h5 class="card-title">Create a Service</h5>
                 <div class="row">
-                    <div class="col-lg-6 col-xxl-4">
+                    <div class="col-xl-5">
                         <form action="" class="newservice-form">
                             <div class="form-group d-flex flex-wrap align-items-center">
                                 <label for="">Service Name</label>
                                 <input type="text" class="form-control form--control">
                             </div>
                             <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Upload Banner Image</label>
-                                <input type="file" class="form--control fileup">
+                                <div><label for="">Upload Banner Image</label></div>
+                                <div class="form--control fileupload d-flex align-items-center">
+                                    <input type="file" id="fileupload" class="d-none">
+                                    <span class="pr-1"><i class="las la-file-upload"></i></span>
+                                    <label for="fileupload">Upload Banner File..</label>
+                                </div>
                             </div>
                             <div class="form-group d-flex flex-wrap align-items-center">
                                 <label for="">Category</label>
@@ -87,19 +101,45 @@
                         </form>
 
                     </div>
-                    <div class="col-lg-6 col-xxl-4">
+                    <div class="col-xl-5">
                         <form action="" class="newservice-form">
                             <div class="form-group d-flex flex-wrap align-items-center">
                                 <label for="">Price</label>
-                                <div class="d-flex">
-                                    <input type="number" class="form-control form--control w-100 border-right-0" aria-label="Username" aria-describedby="basic-addon1">
-                                    <div class="input-group-prepend h-35 ">
-                                        <br>
-                                        <span class="input-group-text  border-left-0" id="basic-addon1">+5 Rs.</span>
+                                <div>
+                                    <div class="d-flex ">
+                                        <input type="number" class="form-control form--control w-100 border-right-0" aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="input-group-prepend h-35 ">
+                                            <span class="input-group-text  border-left-0" id="basic-addon1">+5 Rs.</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center">
+                                        <input id="check" type="checkbox">
+                                        <label for="check" class="m-2">Free</label>
                                     </div>
                                 </div>
-                                <div class="d-block">
-                                    <input type="checkbox">
+                            </div>
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Delivery Time</label>
+                                <div class="form--control border-0">
+                                    <div class="d-flex">
+                                        <input type="text" class="form-control form--control w-100 border-right-0" aria-label="Username" aria-describedby="basic-addon1">
+                                        <div class="input-group-prepend h-35 ">
+                                            <select class="delivery-time">
+                                                <option value="">Hours</option>
+                                                <option value="">1 Hours</option>
+                                                <option value="">2 Hours</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex flex-wrap align-items-center">
+                                <label for="">Quantity?</label>
+                                <div class="d-flex flex-wrap check-input">
+                                    <div class="left">
+                                        <input type="checkbox" checked>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group d-flex flex-wrap align-items-center">
@@ -108,46 +148,26 @@
                             </div>
                             <div class="form-group">
                                 <div class="d-flex flex-wrap maximum-wrapper">
-                                    <div class="form--control">
-                                        <label for="">Maximum Quantity Allowed?</label>
-                                        <span>For example:
-                                            To start working on this service, you need some basic information such as files, mobile number etc.</span>
+                                    <div class="content-left pb-2 pb-sm-0">
+                                        <label for="" class="pb-1 pb-sm-3">Question to Customer?</label>
+                                        <span>For example:</span>
+                                        <span>To start working on this service, you need some basic information such as files, mobile number etc.</span>
                                     </div>
-                                    <div class="w-">
-                                        <textarea class="form--control"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Change Seller Name?:</label>
-                                <div class="d-flex flex-wrap check-input">
-                                    <div class="left">
-                                        <input type="checkbox" checked>
-                                    </div>
-                                    <div class="right"><input type="text" placeholder="Enter Seller Name" class="form-control form--control"></div>
-                                </div>
-                            </div>
-                            <div class="form-group d-flex flex-wrap align-items-center">
-                                <label for="">Change Sort Order?:</label>
-                                <div class="d-flex flex-wrap check-input">
-                                    <div class="left">
-                                        <input type="checkbox" checked>
-                                    </div>
-                                    <div class="right"><input type="text" value="4" class="form-control form--control"></div>
-                                </div>
+                                    <textarea class="form--control textarea-right ps-2"></textarea>
+                                </div> 
                             </div>
                             
                         </form>
 
                     </div>
-                    <div class="col-lg-6 col-xxl-2">
-                        <div>
-                            <a href="#0">Why this extra charge?</a>
+                    <div class="col-xl-2">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <h4 class="text-success font-weight-bold pr-1">75 Rs.</h4>
+                            <a href="#0" class="text-underliine">Why this extra charge?</a>
                         </div>
                     </div>
                 </div>
-                <div class="admin-btn-wrapper d-flex justify-content-center">
+                <div class="admin-btn-wrapper d-flex justify-content-center pt-40">
                     <a href="#0" class="cmn--btn">Create Service</a>
                 </div>
             </div>

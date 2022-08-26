@@ -1,0 +1,130 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
+
+
+<!-- Admin Dashboard Starts Here  -->
+<div class="admin-dashboard">
+    @@include('../partial-html/_sidebar.html')
+
+    <div class="admin-content">
+        <div class="header-top">
+            <div class="row align-items-center justify-content-between w-100">
+                <div class="col-md-3">
+                    <div class="toggle-menu">
+                        <a href="javascript:void(0)" class="toggle-bar">
+                            <span></span>
+                            <span class="ml-fif"></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="d-flex account-verification-details justify-content-center">
+                        <li>Account Status: Active <span class="bts-icon"></span> </li>
+                        <li style="color:#30c00f;">Balance: 628 Rs. <span class="bts-icon"></span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
+                        <div class="tawk-tp-div">
+                            <a href="javascript:void(Tawk_API.toggle())"><img src="https://idpress.in/public/images/live-chat-tp.png" class=""></a>
+                        </div>
+                        <ul class="d-flex align-items-center profile-wrapper">
+                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
+                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
+                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="admin-content-inner">
+            <div class="order-messasge admin-card">
+                <div>
+                    <div class="top-text d-flex align-items-center">
+                        <p class="text--secondary pr-4 mb-0">Your Seller Account -> Orders -></p>
+                        <h5 class="card-title">I will do Tamil Typing (#290101002)</h5>
+                    </div>
+                    <div class="top-bottom">
+                        <h5 class="sub-title">I will do tamil typing</h5>
+                        <p class="text--secondary">Waiting for Payment</p>
+                    </div>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-xl-6 col-lg-7 col-md-6">
+                        <form class="message-box">
+                            <div class="form-group">
+                                <textarea class="form-control form--control" placeholder="Type your message here..."></textarea>
+                            </div>
+                        </form>
+                        <div class="file-btn-wrapper d-flex flex-wrap justify-content-between pb-80">
+                            <div class="upload-file">
+                                <label for="file">Attach files</label>
+                                <input type="file" id="file" class="d-none">
+                            </div>
+                            <a href="#0" class="cmn--btn">Send Message</a>
+                        </div>
+                        <div class="user-content py-4">
+                            <span class="text-success pb-2">Srimathi (namakkal)</span>
+                            <p>Hi Sir, Im going to start the work. Please complete the payment as soon as possible</p>
+                        </div>
+                        <div class="download-wrapper d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="left-content">
+                                <p class="mb-0"><span class="tex"><i class="las la-file-alt"></i></span> tamil_typing_5_pages.docx</p>
+                            </div>
+                            <div class="right-content text--secondary">
+                                <p class="mb-0">1.4 MB Download <i class="fas fa-arrow-circle-down"></i></p>
+                            </div>
+                        </div>
+                        <div class="text-bottom-pay py-2 mt-5">
+                            <h6 class="title pb-2">You (prakash)</h6>
+                            <p class="mb-0">Okay i will pay now</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="order-right-wrapper">
+                            <div class="product-bg">
+                                <ul class="product-list">
+                                    <li>Order ID: #290101002</li>
+                                    <li>Delivery Time: Within 3 Days</li>
+                                    <li>Seller Location: Namakkal</li>
+                                    <li>Work Type: Image Editing - Design</li>
+                                    <li>Quantity: 1 x 250 Rs.</li>
+                                    <li>Total Amount: 500 Rs.</li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="thumb">
+                                            <img src="assets/images/icon/user.png" alt="thumb">
+                                        </div>
+                                        <div class="content pl-2">
+                                            Srimathi (namakkal)
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="qr-code-wrapper">
+                                    <p class="pt-3 pb-0 text-center">Did you paid for this order?</p>
+                                    <div class="qr-thumb mb-3 mb-sm-4">
+                                        <img src="assets/images/thumb/qrcode.png" alt="thumb">
+                                    </div>
+                                    <div class="pt-sm-2 text-center">
+                                        <a href="order.html" class="cmn--btn btn--secondary">Mark Order as Completed <i
+                                                class="las la-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Admin Dashboard Ends Here  -->
+
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

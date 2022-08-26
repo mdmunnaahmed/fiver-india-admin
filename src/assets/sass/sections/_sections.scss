@@ -20,6 +20,11 @@
 .text--secondary {
 	color: #878787;
 }
+.admin-card {
+	@include breakpoint (max-sm) {
+		padding: 15px;
+	}
+}
 
 .search-form {
 	position: relative;
@@ -43,8 +48,12 @@
 		cursor: pointer;
 	}
 }
+.border-bottom {
+	border-bottom: 0px !important;
+	border-top: 1px solid #d7dce3;
+}
 .menu {
-	padding: 0px 20px 10px;
+	padding: 0px 18px 10px;
 	height: 100vh;
 	overflow-y: auto;
 	li {
@@ -52,9 +61,13 @@
 		font-size: 15px;
 		span {
 			padding: 8px 10px;
+			border-bottom: 1px solid #d7dce3;
+			display: block;
+			font-weight: 700;
 		}
 		a {
 			padding: 8px 10px;
+			padding-right: 0px;
 			display: block;
 			border-radius: 4px;
 			i {
@@ -84,22 +97,55 @@
 .admin-content-inner {
 	padding: 20px;
 }
-
+.processing-btn {
+	background-color: hsl(var(--success));
+	border-color: hsl(var(--success));
+	&:hover {
+		border-color: hsl(var(--success));
+		color: hsl(var(--success));
+	}
+}
+.complete-btn {
+	background-color: #007a11;
+	border-color: #007a11;
+	&:hover {
+		border-color: #007a11;
+		color: #007a11;
+	}
+}
+.panding-btn {
+	background-color: #fa6a0a;
+	border-color: #fa6a0a;
+	&:hover {
+		border-color: #fa6a0a;
+		color: #fa6a0a;
+	}
+}
 .newservice-form {
 	.form-group {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
+		.fileupload {
+			line-height: 40px;
+			padding-inline: 7px;
+		}
 		label {
-			width: 185px;
+			width: 200px;
 			margin: 0;
+			@include breakpoint (max-sm) {
+				width: 100%;
+			}
 		}
 		input,
 		select {
 			height: 35px;
 		}
 		.form--control, .check-input {
-			width: calc(100% - 185px);
+			width: calc(100% - 200px);
+			@include breakpoint (max-sm) {
+				width: 100%;
+			}
 		}
 		.fileup {
 			cursor: pointer;
@@ -109,6 +155,16 @@
 		}
 		textarea {
 			padding-left: 10px;
+		}
+	}
+	.delivery-time {
+		border-color: hsl(var(--border));
+		border-left: 0;
+		background-color: hsl(var(--border));
+		padding-left: 4px;
+		&:focus {
+			border-color: hsl(var(--border));
+			outline: 0;
 		}
 	}
 }
@@ -142,6 +198,14 @@
 		border-color: #fa4e0a;
 		font-size: 23px;
 		line-height: 1;
+		@include breakpoint (max-xxl) {
+			font-size: 18px;
+		}
+		@include breakpoint (max-sm) {
+			font-size: 16px;
+			padding-inline: 50px;
+			display: block;
+		}
 		&:hover {
 			text-decoration: none;
 			color: #fff;
@@ -152,7 +216,70 @@
 .text-icon-color {
 	color: #9c999d;
 }
-
+.maximum-wrapper {
+	.content-left {
+		width: 200px;
+	}
+	.content-right {
+		width: calc(100% - 200px);
+	}
+	.textarea-right {
+		height: 200px;
+	}
+}
+.create-subtile {
+	padding-bottom: 5px;
+	border-bottom: 1px solid hsl(var(--border));
+}
+.font-14 {
+	font-size: 14px;
+	text-decoration: underline;
+	color: hsl(var(--base));
+}
+.fz-15 {
+	font-size: 15px;
+}
+.admin-right-content {
+	background-color: #f6f8fc;
+	padding: 25px;
+	padding-right: 80px;
+}
+.pt-170 {
+	padding-top: 170px;
+	@include breakpoint (max-xxl) {
+		padding-top: 130px;
+	}
+	@include breakpoint (max-lg) {
+		padding-top: 100px;
+	}
+	@include breakpoint (max-md) {
+		padding-top: 80px;
+	}
+}
+.upload-file-box {
+	background-color: #f6f8fc;
+	.file-icon {
+		font-size: 100px;
+		line-height: 1;
+	}
+	.cmn--btn {
+		background-color: #cce2f8;
+		border-color: #acc6e0;
+		color: #040404;
+		cursor: pointer;
+		input {
+			width: 100%;
+			height: 100%;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.example-wrapper {
+	padding: 20px;
+	border: 1px solid#cfd9e9;
+}
 // PVC Template Starts Here 
 .pvc-templets {
 	border: 1px solid hsl(var(--border));
@@ -250,6 +377,158 @@
 		}
 	}
 }
+.border-right-0 {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.order-messasge {
+	.top-text {
+		border-bottom: 1px solid hsl(var(--border));
+		position: relative;
+		p {
+			padding-bottom: 5px;
+		}
+		h5, p {
+			@include breakpoint (max-sm) {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+	.card-title {
+		margin-bottom: 0;
+		margin-top: 0px;
+		font-size: 16px;
+		font-weight: 400;
+		&::before {
+			width: 260px;
+			bottom: -2px;
+			@include breakpoint (max-md) {
+				max-width: 100%;
+			}
+		}
+	}
+}
+.top-bottom {
+	padding-top: 25px;
+	padding-bottom: 30px;
+	@include breakpoint (max-sm) {
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	.sub-title {
+		border-bottom: 1px solid hsl(var(--border));
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+	}
+	.text--secondary {
+		font-style: italic;
+	}
+}
+.message-box {
+	textarea {
+		height: 155px;
+		@include breakpoint (max-xxl) {
+			height: 130px;
+		}
+	}
+}
+.upload-file {
+	border: 1px solid #e4e9f5;
+	color: #a6b0c8;
+	display: inline;
+	margin: 0;
+	padding: 0px 15px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+}
+.user-content {
+	p {
+		line-height: 1.2;
+	}
+}
+.text-bottom-pay {
+	border-top: 1px solid hsl(var(--border));
+	border-bottom: 1px solid hsl(var(--border));
+}
+.download-wrapper {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #dbe0ea;
+	.left-content {
+		color: hsl(var(--base));
+	}
+}
+.file-btn-wrapper {
+	border-bottom: 1px solid hsl(var(--border));
+	.cmn--btn {
+		background-color: transparent;
+		border-color: hsl(var(--base));
+		color: hsl(var(--base));
+		@include breakpoint (max-sm) {
+			padding: 5px 15px;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.order-right-wrapper {
+	padding-left: 50px;
+	padding-right: 50px;
+	@include breakpoint (max-xxl) {
+		padding: 0px;
+		padding-left: 30px;
+	}
+	@include breakpoint (max-xl) {
+		padding: 0px;
+		padding-left: 10px;
+	}
+	@include breakpoint (max-lg) {
+		padding: 0px;
+	}
+}
+.product-bg{
+	background-color: #f6f8fc;
+	padding: 30px;
+	border-radius: 10px;
+	@include breakpoint (max-sm) {
+		padding: 15px;
+	}
+	.product-list {
+		li {
+			padding: 7px 0;
+			color: #040404;
+			font-size: 15px;
+		}
+	}
+	.cmn--btn {
+		background-color: #2b2b2b;
+		padding: 9px 10px;
+		border-color: #2b2b2b;
+		border-width: 1px;
+		@include breakpoint (max-xxl) {
+			font-size: 15px;
+			padding: 8px 7px;
+		}
+		&:hover {
+			text-decoration: none;
+			color: #2b2b2b;
+			background-color: transparent;
+		}
+	}
+	.qr-thumb {
+		img {
+			width: 100%;
+		}
+	}
+}
+.qr-code-wrapper {
+	border-top: 1px solid hsl(var(--border));
+	border-width: 150%;
+	margin-top: 15px;
+}
 // Transactions Starts Here 
 .content-search-form {
 	.form-group {
@@ -309,6 +588,10 @@
 			padding: 18px 15px !important;
 		}
 	}
+}
+.text-underliine {
+	text-decoration: underline;
+	color: hsl(var(--base));
 }
 
 // Login & Register Starts

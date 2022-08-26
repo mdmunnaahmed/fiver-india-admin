@@ -163,10 +163,8 @@ $(".menu li a").each(function () {
 });
 
 
-$(".toggle-menu").on("click", function (e) {
-	$(".sidebar").toggleClass("toggle-menu");
-	var menuSidebarWidth = $(".sidebar").width();
-	var bodyContent = $(".admin-content-inner");
-	var bodyContentWidth = "100" + menuSidebarWidth;
-	bodyContent.css("width", "100%" + "-" + menuSidebarWidth);
-});
+// $(".toggle-menu").on("click", function (e) {
+// 	$(".sidebar").toggleClass("toggle-menu");
+// 	var menuSidebarWidth = $(".sidebar").width();
+// 	var bodyContent = $(".admin-content-inner");
+// });
