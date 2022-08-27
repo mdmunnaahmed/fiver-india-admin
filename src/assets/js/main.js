@@ -168,3 +168,14 @@ $(".menu li a").each(function () {
 // 	var menuSidebarWidth = $(".sidebar").width();
 // 	var bodyContent = $(".admin-content-inner");
 // });
+
+// Product Details Remove Starts Here 
+$(".product-icon1").on("click", function () {
+	$(".product-icon1").closest(".product-details1").remove();
+});
+$(".product-icon2").on("click", function () {
+	$(".product-icon2").closest(".product-details2").remove();
+});
+$(".product-icon3").on("click", function () {
+	$(".product-icon3").closest(".product-details3").remove();
+});
