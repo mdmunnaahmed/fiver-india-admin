@@ -1701,7 +1701,8 @@ input:-webkit-autofill:focus {
 }
 
 .account-verification-details {
-    width: 500px;
+    max-width: 500px;
+    flex-wrap: wrap;
 }
 
 .account-verification-details li {

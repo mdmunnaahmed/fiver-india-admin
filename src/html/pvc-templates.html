@@ -1,66 +1,11 @@
 <!-- meta tags and other links -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Site Titlte Here</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
-    <!-- bootstrap 5  -->
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
-    <!-- Icon Link  -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/lib/animate.css">
-
-    <!-- Plugin Link -->
-    <link rel="stylesheet" href="assets/css/lib/slick.css">
-    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-
-<body>
-    <!-- Overlay -->
-    <div class="overlay"></div>
-    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
-
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
 
 
 <!-- Admin Dashboard Starts Here  -->
 <div class="admin-dashboard">
-    <div class="sidebar">
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="thumb">
-        </a>
-    </div>
-    <form class="search-form">
-        <div class="form-group">
-            <input type="text" placeholder="Search" class="form-control form--control">
-        </div>
-        <span class="search-icon text-icon-color "><i class="fas fa-search"></i></span>
-    </form>
-    <div class="menu-sidebar">
-        <ul class="menu">
-            <li><a href="#0"><i class="las la-home"></i> Dashboard</a></li>
-            <li><a href="index.html">Your Seller Account</a></li>
-            <li><a href="your-services.html">Your Services</a></li>
-            <li><span class="text--secondary border-bottom">Your Buyer Account</span></li>
-            <li><span class="text--secondary mb-2">Cards Templetes</span></li>
-            <li><a href="pvc-templets.html" class="active"><i class="las la-digital-tachograph"></i> PVC Templets</a></li>
-            <li><a href="#0"><i class="las la-file-alt"></i> Resume Builder</a></li>
-            <li><a href="#0"><i class="fas fa-user-graduate"></i> Website Watchman</a></li>
-            <li><span class="text--secondary">Accounts Related</span></li>
-            <li><a href="#0"><i class="fas fa-history"></i> Recharge History</a></li>
-            <li><a href="transactions.html"><i class="fas fa-random"></i> Transations</a></li>
-            <li><a href="#0"><i class="fas fa-rupee-sign"></i> Rechage</a></li>
-            <li><a href="#0">Become Distributor</a></li>
-        </ul>
-    </div>
-</div>
+    @@include('../partial-html/_sidebar.html')
 
     <div class="admin-content">
         <div class="header-top">
@@ -95,10 +40,23 @@
                                 <img src="assets/images/thumb/main-user.png" alt="thumb">
                             </div>
                         </div>
-                        <ul class="d-flex align-items-center profile-wrapper">
-                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i class="fa fa-bell" aria-hidden="true"></i> </a></li>
-                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
-                        </ul>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" class="nav-link nav-link-profile" data-toggle="dropdown" aria-expanded="false">
+                                <span class="logged-name hidden-md-down">Katherine</span>
+                                <img src="../img/img1.jpg" class="wd-32 rounded-circle" alt="">
+                                <span class="square-10 bg-success"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-header wd-200" x-placement="bottom-start" style="position: absolute; transform: translate3d(-18px, 48px, 0px); top: 0px; right: 0px; will-change: transform;">
+                                <ul class="list-unstyled user-profile-nav">
+                                    <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
+                                    <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
+                                    <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
+                                    <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
+                                    <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
+                                    <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
+                                </ul>
+                            </div><!-- dropdown-menu -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,21 +367,8 @@
 
 
 
-
-
-<!-- jQuery library -->
-<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
-
-<!-- Bootstrap 5 js -->
-<script src="assets/js/lib/bootstrap.min.js"></script>
-
-<!-- Pluglin Link -->
-<script src="assets/js/lib/slick.min.js"></script>
-<script src="assets/js/lib/magnific-popup.min.js"></script>
-<script src="assets/js/lib/wow.min.js"></script>
-
-<!-- Main js -->
-<script src="assets/js/main.js"></script>
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
 </body>
 
 </html>
