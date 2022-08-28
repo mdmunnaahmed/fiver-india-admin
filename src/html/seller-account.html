@@ -1,71 +1,16 @@
 <!-- meta tags and other links -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Site Titlte Here</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
-    <!-- bootstrap 5  -->
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
-    <!-- Icon Link  -->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/lib/animate.css">
-
-    <!-- Plugin Link -->
-    <link rel="stylesheet" href="assets/css/lib/slick.css">
-    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-
-<body>
-    <!-- Overlay -->
-    <div class="overlay"></div>
-    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
-
+@@include('../partial-html/_template-top.html')
+@@include('../partial-html/_header.html')
 
 
 <!-- Admin Dashboard Starts Here  -->
 <div class="admin-dashboard">
-    <div class="sidebar">
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="thumb">
-        </a>
-    </div>
-    <form class="search-form">
-        <div class="form-group">
-            <input type="text" placeholder="Search" class="form-control form--control">
-        </div>
-        <span class="search-icon text-icon-color "><i class="fas fa-search"></i></span>
-    </form>
-    <div class="menu-sidebar">
-        <ul class="menu">
-            <li><a href="#0"><i class="las la-home"></i> Dashboard</a></li>
-            <li><a href="index.html">Your Seller Account</a></li>
-            <li><a href="your-services.html">Your Services</a></li>
-            <li><span class="text--secondary border-bottom">Your Buyer Account</span></li>
-            <li><span class="text--secondary mb-2">Cards Templetes</span></li>
-            <li><a href="pvc-templets.html" class="active"><i class="las la-digital-tachograph"></i> PVC Templets</a></li>
-            <li><a href="#0"><i class="las la-file-alt"></i> Resume Builder</a></li>
-            <li><a href="#0"><i class="fas fa-user-graduate"></i> Website Watchman</a></li>
-            <li><span class="text--secondary">Accounts Related</span></li>
-            <li><a href="#0"><i class="fas fa-history"></i> Recharge History</a></li>
-            <li><a href="transactions.html"><i class="fas fa-random"></i> Transations</a></li>
-            <li><a href="#0"><i class="fas fa-rupee-sign"></i> Rechage</a></li>
-            <li><a href="#0">Become Distributor</a></li>
-        </ul>
-    </div>
-</div>
+    @@include('../partial-html/_sidebar.html')
 
     <div class="admin-content">
         <div class="header-top">
-            <div class="row align-items-center justify-content-between w-100">
-                <div class="col-md-3">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-3 col-md-1 col-2">
                     <div class="toggle-menu">
                         <a href="javascript:void(0)" class="toggle-bar">
                             <span></span>
@@ -74,17 +19,18 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-md-5 col-10">
                     <ul class="d-flex account-verification-details">
-                        <li class="d-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
+                        <li class="d-inline-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
                                 <img src="assets/images/icon/tick-icon.png" alt="icon">
                             </span> </li>
-                        <li class="d-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
+                        <li class="d-inline-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
                                 <img src="assets/images/icon/tick-icon.png" alt="icon">
-                            </span></li>
+                            </span>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-5 col-md-6 col-10">
                     <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
                         <div class="user-wrapper d-flex flex-wrap align-items-center">
                             <div class="content">
@@ -95,23 +41,46 @@
                                 <img src="assets/images/thumb/main-user.png" alt="thumb">
                             </div>
                         </div>
-                        <div class="dropdown">
-                            <a href="javascript:void(0)" class="nav-link nav-link-profile" data-toggle="dropdown" aria-expanded="false">
-                                <span class="logged-name hidden-md-down">Katherine</span>
-                                <img src="../img/img1.jpg" class="wd-32 rounded-circle" alt="">
-                                <span class="square-10 bg-success"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-header wd-200" x-placement="bottom-start" style="position: absolute; transform: translate3d(-18px, 48px, 0px); top: 0px; right: 0px; will-change: transform;">
-                                <ul class="list-unstyled user-profile-nav">
-                                    <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
-                                    <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
-                                    <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
-                                    <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
-                                    <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
-                                    <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
-                                </ul>
-                            </div><!-- dropdown-menu -->
-                        </div>
+                        <ul class="d-flex align-items-center profile-wrapper">
+                            <li>
+                                <a href="javascript:void(0)" class="fs--18px" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-bell"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="top-menu-link profile-top-div" id="profile-dropdown-hs"><span>DP</span></a>
+                                <div class="dropdown-wrapper">
+                                    <div class="dropdown-inner">
+                                        <ul class="notification">
+                                            <li class="notification-item border-0">
+                                                <div class="notificatoin-item-top d-flex gap-3 align-items-center">
+                                                    <div class="notification-item__thumb">
+                                                        <img src="assets/images/thumb/profile-user.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="notification-item__content">
+                                                        <h6 class="notification-item__content-name font-weight-bold">Dilip Pious Joe</h6>
+                                                        <p class="active-text"><span class="text--success"><i class="fas fa-circle"></i></span> Active
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <ul class="notification-item__content-content">
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i class="fa fa-bell"
+                                                                    aria-hidden="true"></i></span> Notification</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mar-1"><i
+                                                                    class="fas fa-cogs"></i>
+                                                            </span> Edit Profile</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i
+                                                                    class="fas fa-briefcase"></i></span> Business Details</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i
+                                                                    class="fas fa-lock-open"></i></span> Change Password</a></li>
+                                                    <li><a href="index.html" class="mt-1 d-block fs--14px fw-semibold">Log Out <span
+                                                                class="ml-1 text--danger"><i class="fas fa-power-off"></i></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -119,32 +88,40 @@
 
         <div class="admin-content-inner">
             <div class="pvc-templets">
-                <ul class="order-filter d-flex flex-wrap align-items-center">
-                    <li><a href="#0">Order ID</a></li>
-                    <li><a href="#0">Buyer Mobile</a></li>
-                    <li><a href="#0">Buyer Email</a></li>
-                    <li>
-                        <select class="form--control">
-                            <option value="">Order Status</option>
-                            <option value="">Order pending</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select class="form--control">
-                            <option value="">Date</option>
-                            <option value="">Today</option>
-                            <option value="">yesterday</option>
-                        </select>
-                    </li>
-                    <li><a href="#0">SEARCH</a></li>
-                </ul>
+                <div class="d-flex flex-wrap justify-content-between">
+                    <ul class="order-filter d-flex flex-wrap align-items-center">
+                        <li><a href="#0">Order ID</a></li>
+                        <li><a href="#0">Buyer Mobile</a></li>
+                        <li><a href="#0">Buyer Email</a></li>
+                        <li>
+                            <select class="form--control">
+                                <option value="">Order Status</option>
+                                <option value="">Order pending</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form--control">
+                                <option value="">Date</option>
+                                <option value="">Today</option>
+                                <option value="">yesterday</option>
+                            </select>
+                        </li>
+                        <li><a href="#0">SEARCH</a></li>
+                    </ul>
+                    <div>
+                        <a href="create-services.html" class="cmn--btn badge--warning text-decoration-none"><i class="las la-plus-circle"></i> Create New Service</a>
+                    </div>
+                </div>
                 <div>
                     <ul class="nav nav-filter">
-                        <li class="nav-item"><a href="#test1" data-toggle="tab" class="nav-link active"><i class="lar la-check-circle"></i>Ongoing & New
+                        <li class="nav-item"><a href="#test1" data-toggle="tab" class="nav-link active"><i class="lar la-check-circle"></i>Ongoing &
+                                New
                                 Orders</a></li>
-                        <li class="nav-item"><a href="#test2" data-toggle="tab" class="nav-link text-secondary"><i class="lar la-check-circle"></i>Completed Orders</a>
+                        <li class="nav-item"><a href="#test2" data-toggle="tab" class="nav-link text-secondary"><i
+                                    class="lar la-check-circle"></i>Completed Orders</a>
                         </li>
-                        <li class="nav-item"><a href="#test3" data-toggle="tab" class="nav-link text-secondary"><i class="las la-times-circle"></i>Cancelled Orders</a>
+                        <li class="nav-item"><a href="#test3" data-toggle="tab" class="nav-link text-secondary"><i
+                                    class="las la-times-circle"></i>Cancelled Orders</a>
                         </li>
                     </ul>
                 </div>
@@ -178,7 +155,16 @@
                                     <td data-label="Order Date">29 Jul 2022</td>
                                     <td data-label="Due On">31 Jul 2022</td>
                                     <td data-label="Total">₹350</td>
-                                    <td data-label="Status"><a href="#0" class="badge badge--warning">Waiting to start...</a></td>
+                                    <td data-label="Status">
+                                        <div class="d-flex flex-wrap button-wrapper-width justify-content-end">
+                                            <div>
+                                                <a href="#0" class="badge badge--warning">Accept Order</a>
+                                            </div>
+                                            <div>
+                                                <a href="#0" class="badge badge--secondary">Cancel Order</a>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -420,23 +406,24 @@
 </div>
 <!-- Admin Dashboard Ends Here  -->
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
-<!-- jQuery library -->
-<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
-
-<!-- Bootstrap 5 js -->
-<script src="assets/js/lib/bootstrap.min.js"></script>
-
-<!-- Pluglin Link -->
-<script src="assets/js/lib/slick.min.js"></script>
-<script src="assets/js/lib/magnific-popup.min.js"></script>
-<script src="assets/js/lib/wow.min.js"></script>
-
-<!-- Main js -->
-<script src="assets/js/main.js"></script>
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
 </body>
 
 </html>

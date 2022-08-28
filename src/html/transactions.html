@@ -8,7 +8,7 @@
     @@include('../partial-html/_sidebar.html')
 
     <div class="admin-content">
-        <div class="header-top">
+        <div class="header-top style-two">
             <div class="row align-items-center justify-content-between w-100">
                 <div class="col-md-3">
                     <div class="toggle-menu">
@@ -20,30 +20,15 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <ul class="d-flex account-verification-details">
-                        <li class="d-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
-                                <img src="assets/images/icon/tick-icon.png" alt="icon">
-                            </span> </li>
-                        <li class="d-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
-                                <img src="assets/images/icon/tick-icon.png" alt="icon">
-                            </span></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
                     <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
-                        <div class="user-wrapper d-flex flex-wrap align-items-center">
-                            <div class="content">
-                                <p class="mb-1">உதவி வேண்டுமா?</p>
-                                <p class="mb-0 fs-12">என்னிடம் சேட் செய்யுங்கள்</p>
-                            </div>
-                            <div class="thumb">
-                                <img src="assets/images/thumb/main-user.png" alt="thumb">
-                            </div>
-                        </div>
                         <ul class="d-flex align-items-center profile-wrapper">
-                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
-                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
-                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
+                            <li style="position:relative;">
+                                <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"><i
+                                        class="fa fa-bell" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="top-menu-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -163,7 +148,21 @@
 </div>
 <!-- Admin Dashboard Ends Here  -->
 
-
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')

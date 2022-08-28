@@ -1,14 +1,21 @@
 .header-top {
-    padding: 4px 10px;
+    padding: 4px 0px;
 	border-bottom: 1px solid hsl(var(--border));
 	position: sticky;
 	top: 0;
 	background-color: #fafcff;
 	z-index: 111;
+	&.style-two {
+		padding: 9.5px 0;
+	}
 }
 .account-verification-details {
-	max-width: 500px;
-	flex-wrap: wrap;
+	width: 450px;
+	@include breakpoint (max-xl) {
+		flex-wrap: wrap;
+		max-width: 450px;
+
+	}
 }
 .account-verification-details li {
 	color: #727272;
@@ -45,7 +52,7 @@
 	color: hsl(var(--white));
 	font-size: 15px;
 	width: 215px;
-	border-radius: 5px 50px 50px 5px;
+	border-radius: 10px 50px 50px 10px;
 	padding: 0px 10px;
 	.content {
 		width: 155px;

@@ -9,9 +9,9 @@
 	color: hsl(var(--primary));
 }
 .badge--secondary {
-	background-color: hsl(var(--secondary) / 0.15);
+	background-color: hsl(var(--secondary));
 	border: 1px solid hsl(var(--secondary));
-	color: hsl(var(--secondary));
+	color: hsl(var(--white));
 }
 .badge--success {
 	background-color: #01c52f;

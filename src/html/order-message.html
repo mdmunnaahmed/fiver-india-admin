@@ -9,8 +9,8 @@
 
     <div class="admin-content">
         <div class="header-top">
-            <div class="row align-items-center justify-content-between w-100">
-                <div class="col-md-3">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-3 col-md-1 col-2">
                     <div class="toggle-menu">
                         <a href="javascript:void(0)" class="toggle-bar">
                             <span></span>
@@ -19,21 +19,66 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="d-flex account-verification-details justify-content-center">
-                        <li>Account Status: Active <span class="bts-icon"></span> </li>
-                        <li style="color:#30c00f;">Balance: 628 Rs. <span class="bts-icon"></span></li>
+                <div class="col-xl-4 col-md-5 col-10">
+                    <ul class="d-flex account-verification-details">
+                        <li class="d-inline-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
+                                <img src="assets/images/icon/tick-icon.png" alt="icon">
+                            </span> </li>
+                        <li class="d-inline-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
+                                <img src="assets/images/icon/tick-icon.png" alt="icon">
+                            </span>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-5 col-md-6 col-10">
                     <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
-                        <div class="tawk-tp-div">
-                            <a href="javascript:void(Tawk_API.toggle())"><img src="https://idpress.in/public/images/live-chat-tp.png" class=""></a>
+                        <div class="user-wrapper d-flex flex-wrap align-items-center">
+                            <div class="content">
+                                <p class="mb-1">உதவி வேண்டுமா?</p>
+                                <p class="mb-0 fs-12">என்னிடம் சேட் செய்யுங்கள்</p>
+                            </div>
+                            <div class="thumb">
+                                <img src="assets/images/thumb/main-user.png" alt="thumb">
+                            </div>
                         </div>
                         <ul class="d-flex align-items-center profile-wrapper">
-                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
-                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
-                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
+                            <li>
+                                <a href="javascript:void(0)" class="fs--18px" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-bell"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="top-menu-link profile-top-div" id="profile-dropdown-hs"><span>DP</span></a>
+                                <div class="dropdown-wrapper">
+                                    <div class="dropdown-inner">
+                                        <ul class="notification">
+                                            <li class="notification-item border-0">
+                                                <div class="notificatoin-item-top d-flex gap-3 align-items-center">
+                                                    <div class="notification-item__thumb">
+                                                        <img src="assets/images/thumb/profile-user.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="notification-item__content">
+                                                        <h6 class="notification-item__content-name font-weight-bold">Dilip Pious Joe</h6>
+                                                        <p class="active-text"><span class="text--success"><i class="fas fa-circle"></i></span> Active
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <ul class="notification-item__content-content">
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i class="fa fa-bell"
+                                                                    aria-hidden="true"></i></span> Notification</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mar-1"><i
+                                                                    class="fas fa-cogs"></i> </span> Edit Profile</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i
+                                                                    class="fas fa-briefcase"></i></span> Business Details</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i
+                                                                    class="fas fa-lock-open"></i></span> Change Password</a></li>
+                                                    <li><a href="index.html" class="mt-1 d-block fs--14px fw-semibold">Log Out <span
+                                                                class="ml-1 text--danger"><i class="fas fa-power-off"></i></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -107,8 +152,7 @@
                                         <img src="assets/images/thumb/qrcode.png" alt="thumb">
                                     </div>
                                     <div class="pt-sm-2 text-center">
-                                        <a href="#0" class="cmn--btn btn--secondary">Mark Order as Completed <i
-                                                class="las la-angle-right"></i></a>
+                                        <a href="#0" class="cmn--btn btn--secondary">Mark Order as Completed <i class="las la-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +165,21 @@
 </div>
 <!-- Admin Dashboard Ends Here  -->
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+            </div>
+        </div>
+    </div>
+</div>
 
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')

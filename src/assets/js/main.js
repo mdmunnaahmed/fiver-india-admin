@@ -163,11 +163,6 @@ $(".menu li a").each(function () {
 });
 
 
-// $(".toggle-menu").on("click", function (e) {
-// 	$(".sidebar").toggleClass("toggle-menu");
-// 	var menuSidebarWidth = $(".sidebar").width();
-// 	var bodyContent = $(".admin-content-inner");
-// });
 
 // Product Details Remove Starts Here 
 $(".product-icon1").on("click", function () {

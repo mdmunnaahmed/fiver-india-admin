@@ -709,3 +709,120 @@
 		font-size: 14px;
 	}
 }
+
+.modal-dialog {
+	max-width: 800px;
+}
+.profile-wrapper {
+	position: relative;
+}
+.dropdown-wrapper {
+    position: absolute;
+	right: 0px;
+    top: calc(100% - 1px);
+    min-width: 250px;
+    background-color: hsl(var(--white));
+    box-shadow: 0px 1px 6px 2px hsl(var(--dark)/0.2);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0.85);
+    z-index: 999;
+}
+
+.profile-top-div {
+    background-color: #686868;
+    display: block;
+    color: #fff !important;
+    font-size: 19px;
+    border: 1px solid #686868;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+	line-height: 30px;
+    padding: 5px 3px;
+	@include breakpoint (max-xxl) {
+		font-size: 17px;
+		width: 35px;
+		height: 35px;
+		line-height: 25px;
+	}
+}
+.fs--18px {
+	font-size: 20px;
+	@include breakpoint (max-xxl) {
+		font-size: 18px;
+	}
+}
+.button-wrapper-width {
+	max-width: 145px;
+	margin-left: auto;
+}
+.dropdown-header {
+    display: block;
+    padding: var(--bs-dropdown-header-padding-y) var(--bs-dropdown-header-padding-x);
+    margin-bottom: 0;
+    font-size: .875rem;
+    color: var(--bs-dropdown-header-color);
+    white-space: nowrap;
+}
+.notification-item {
+    justify-content: space-between;
+    border-top: 1px solid hsl(var(--light-700));
+	padding: 5px 0px;
+	.notificatoin-item-top {
+		padding: 0px 10px;
+	}
+	&__thumb {
+		
+		img {
+			width: 50px;
+			height: auto;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	&__content {
+		padding-left: 15px;
+		.active-text {
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+		.text--success {
+			font-size: 10px;
+		}
+	}
+	&__content-content {
+		border-top: 1px solid hsl(var(--border));
+		margin-top: 15px;
+		padding: 0;
+		li {
+			a {
+				padding: 5px 15px;
+				&:hover {
+					text-decoration: none;
+					background-color: #F5F5F5;
+				}
+			}
+			&:last-child {
+				border-top: 1px solid hsl(var(--border));
+			}
+		}
+	}
+}
+.top-menu-link:focus ~ .dropdown-wrapper {
+    visibility: visible;
+    opacity: 1;
+	  transform: scaleY(1);
+}
+
+.modal-title {
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+.modal-body {
+	padding: 23px 0;
+}

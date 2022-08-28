@@ -46,11 +46,11 @@
     <div class="menu-sidebar">
         <ul class="menu">
             <li><a href="#0"><i class="las la-home"></i> Dashboard</a></li>
-            <li><a href="index.html">Your Seller Account</a></li>
-            <li><a href="your-services.html">Your Services</a></li>
+            <li><a href="seller-account.html">Your Seller Account</a></li>
+            <li><a href="create-services.html">Your Services</a></li>
             <li><span class="text--secondary border-bottom">Your Buyer Account</span></li>
             <li><span class="text--secondary mb-2">Cards Templetes</span></li>
-            <li><a href="pvc-templets.html" class="active"><i class="las la-digital-tachograph"></i> PVC Templets</a></li>
+            <li><a href="pvc-templets.html"><i class="las la-digital-tachograph"></i> PVC Templets</a></li>
             <li><a href="#0"><i class="las la-file-alt"></i> Resume Builder</a></li>
             <li><a href="#0"><i class="fas fa-user-graduate"></i> Website Watchman</a></li>
             <li><span class="text--secondary">Accounts Related</span></li>
@@ -62,10 +62,12 @@
     </div>
 </div>
 
+
+
     <div class="admin-content">
         <div class="header-top">
-            <div class="row align-items-center justify-content-between w-100">
-                <div class="col-md-3">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-3 col-md-1 col-2">
                     <div class="toggle-menu">
                         <a href="javascript:void(0)" class="toggle-bar">
                             <span></span>
@@ -74,17 +76,18 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-md-5 col-10">
                     <ul class="d-flex account-verification-details">
-                        <li class="d-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
+                        <li class="d-inline-flex align-items-center">Account Status: Active <span class=" pl-2 bts-icon">
                                 <img src="assets/images/icon/tick-icon.png" alt="icon">
                             </span> </li>
-                        <li class="d-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
+                        <li class="d-inline-flex align-items-center" style="color:#30c00f;">Balance: 628 Rs. <span class=" pl-2 bts-icon">
                                 <img src="assets/images/icon/tick-icon.png" alt="icon">
-                            </span></li>
+                            </span>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-5 col-md-6 col-10">
                     <div class="d-flex flex-wrap profile-wrapper-outer justify-content-end">
                         <div class="user-wrapper d-flex flex-wrap align-items-center">
                             <div class="content">
@@ -96,9 +99,42 @@
                             </div>
                         </div>
                         <ul class="d-flex align-items-center profile-wrapper">
-                            <li><a href="javascript:void(0)" data-toggle="modal" data-target="#notification-list-popup" style="position:relative;"><i
-                                        class="fa fa-bell" aria-hidden="true"></i> </a></li>
-                            <li><a href="javascript:void(0)" class="profile-top-div" id="profile-dropdown-hs"><span>DP</span></a></li>
+                            <li>
+                                <a href="javascript:void(0)" class="fs--18px" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-bell"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="top-menu-link profile-top-div" id="profile-dropdown-hs"><span>DP</span></a>
+                                <div class="dropdown-wrapper">
+                                    <div class="dropdown-inner">
+                                        <ul class="notification">
+                                            <li class="notification-item border-0">
+                                                <div class="notificatoin-item-top d-flex gap-3 align-items-center">
+                                                    <div class="notification-item__thumb">
+                                                        <img src="assets/images/thumb/profile-user.jpg" alt="thumb">
+                                                    </div>
+                                                    <div class="notification-item__content">
+                                                        <h6 class="notification-item__content-name font-weight-bold">Dilip Pious Joe</h6>
+                                                        <p class="active-text"><span class="text--success"><i class="fas fa-circle"></i></span> Active</p>
+                                                    </div>
+                                                </div>
+                                                <ul class="notification-item__content-content">
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i class="fa fa-bell"
+                                                                    aria-hidden="true"></i></span> Notification</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mar-1"><i class="fas fa-cogs"></i>
+                                                            </span> Edit Profile</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i
+                                                                    class="fas fa-briefcase"></i></span> Business Details</a></li>
+                                                    <li><a href="#0" class="d-block fs--14px fw-semibold"><span class="mr-1"><i
+                                                                    class="fas fa-lock-open"></i></span> Change Password</a></li>
+                                                    <li><a href="index.html" class="mt-1 d-block fs--14px fw-semibold">Log Out <span
+                                                                class="ml-1 text--danger"><i class="fas fa-power-off"></i></span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -106,7 +142,7 @@
         </div>
         <div class="admin-content-inner">
             <div class="create-service admin-card">     
-                <a href="#0" class="cmn--btn badge--warning text-decoration-none"><i class="las la-plus-circle"></i> Create New Service</a>
+                <a href="create-services.html" class="cmn--btn badge--warning text-decoration-none"><i class="las la-plus-circle"></i> Create New Service</a>
                 <table class="table table--responsive--xl category-table w-100">
                     <thead>
                         <tr>
@@ -186,7 +222,21 @@
 </div>
 <!-- Admin Dashboard Ends Here  -->
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
